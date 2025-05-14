@@ -5,7 +5,7 @@
     --color-resaltado2: #fff;
     --color-fondo: #404040;
     --color-fondo2: #000;
-    --fuente-cuerpo: "Roboto", sans-serif;
+    --color-fondo3: #fff;
     --fuente-titulos: "Poppins", sans-serif;
 }
 
@@ -15,11 +15,9 @@
 
 body {
     background-color: var(--color-fondo);
-    
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
     align-items: center;
     margin: 0;
 }
@@ -33,6 +31,9 @@ header {
     flex-direction: row;
     background-color: var(--color-fondo2);
     margin: 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 p#icono {
@@ -94,16 +95,26 @@ main {
     justify-content: center;
 }
 
+section#Inicio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+
+    width: 80%
+}
+
 div.cardPerfil {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     border-radius: 30px;
-    width: 100%;
+    width: 55%;
     margin-top: 2rem;
-    padding: 20px;
-    background-color: white;
+    padding: 15px 10px 15px 10px;
+    background-color: var(--color-fondo3);
 }
 
 
@@ -112,7 +123,7 @@ div.imgPerfil {
     flex-direction: row;
     justify-content: flex-start;
     align-items: start;
-    height: 25vh;
+    height: 14rem;
     width: 12vw;
     border-radius: 20px;    
 }
@@ -149,4 +160,100 @@ div.infoPerfil p.presentacion {
     font-style: italic;
     color: var(--color-cuerpo);
     font-size: 1rem;
+}
+
+div.infoPerfil p#txtUbicacion {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 0;
+}
+
+div.infoPerfil img#imgUbicacion {
+    width: 20px;
+    height: 20px;
+    margin-right: 0.1rem;
+}
+
+section#Proyectos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+    div.Proyectos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    width: 55%;
+    margin-top: 2rem;
+    padding: 15px 10px 15px 10px;
+    background-color: var(--color-fondo3);
+    }
+
+    div.tituloProyectos {
+        display: flex;
+        flex-direction: row; 
+        justify-content: start;
+        align-items: center;
+        width: 100%;
+    }
+
+    div.tituloProyectos h2 {
+        font-family: var(--fuente-titulos);
+        color: var(--color-titulos);
+        font-size: 2.5rem;
+        margin:0;
+        padding: 0 0 0 0;
+    }
+
+div.listaProyectos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+}
+
+div.cardProyecto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    height: 100%;
+   
+}
+div.cardProyecto h3.subtitleProyecto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 0;
+    font-family: var(--fuente-titulos);
+    height: 60px;
+}
+
+div.cardProyecto p.descripcionProyecto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: var(--fuente-titulos);
+}
+
+div.masProyectos {
+    align-items: center;
+    justify-self: center;
+    width: 100%;
+    grid-column: span 3;
+}
+div.masProyectos > a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
