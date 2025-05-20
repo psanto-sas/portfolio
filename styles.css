@@ -7,10 +7,6 @@
     --fuente-titulos: "Poppins", sans-serif;
 }
 
-
-
-
-
 body {
     background-color: var(--color-fondo2);
     display: flex;
@@ -21,7 +17,7 @@ body {
 }
 
 header {
-    width: 100vw;
+    width: 99vw;
     height: 100%;
     display: flex;
     justify-content: space-around;
@@ -96,8 +92,6 @@ section#Inicio {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
-
     width: 80%
 }
 
@@ -141,14 +135,14 @@ div.infoPerfil h1.nombre {
     font-family: var(--fuente-titulos);
     color: var(--color-fuente);
     font-size: 3rem;
-    margin:0;
+    margin: 0;
     padding: 0 0 0 0;
 }
 div.infoPerfil h2.profesion {
     font-family: var(--fuente-titulos);
     color: var(--color-fuente);
     font-size: 2rem;
-    margin:0;
+    margin: 0;
     padding: 0;
 }
 div.infoPerfil p.presentacion {
@@ -209,10 +203,6 @@ div.redesSociales a:hover{
 }
 
 /*  */
-
-
-
-
 
 section#Proyectos {
     display: flex;
@@ -332,5 +322,146 @@ div.masProyectos a{
     text-decoration: none;
     font-family: var(--fuente-titulos);
     font-size: 2.5rem;
+}
+
+
+section#ToolsSkills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    margin-top: 50px;
+}
+
+div.ToolsSkills {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    border-radius: 30px;
+    width: 55%;
+    height: 100%;
+    margin-top: 2rem;
+    padding: 15px 10px 15px 10px;
+    background-color: var(--color-fondo);
+}
+
+div.tituloTS{
+    display: flex;
+    flex-direction: row; 
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+}
+
+div.tituloTS > h3 {
+    font-family: var(--fuente-titulos);
+    color: var(--color-fuente);
+    font-size: 2.5rem;
+    margin:0;
+    padding: 0 0 0 0;
+}
+
+div.tituloTS > img{
+    height: 65px;
+    padding: 10px;
+}
+
+div.tools{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+h3.subtituloLista {
+    font-family: var(--fuente-titulos);
+    color: var(--color-fuente);
+    font-size: 1.5rem;
+    margin: 1em 0 0.5em 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+p.presentTS {
+    font-family: var(--fuente-titulos);
+    color: var(--color-fuente);
+    width: 100%;
+    text-align: center;
+    margin: 0 0 20px 0;
+}
+div.listaT1 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 40px;
+    row-gap: 20px;
+    
+}
+
+div.tecnologias{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 3px 2px #0a0a0a;
+    transition: transform 0.2s ease-in;
+}
+
+div.tecnologias:hover {
+    transform: translateY(-9%);
+    
+}
+
+div.tecnologias p.tool {
+    font-family: var(--fuente-titulos);
+    color: var(--color-fuente);
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0 0 0;
+    
+}
+
+div.tecnologias img#vsc{
+    height: 110px;
+    width: 110px;
+}
+
+.d-none {
+    display: none;
+}
+
+#verMasTS {
+  grid-column-start: span 4;
+  width: 104.5%;
+  height: 75px;
+  margin-top: 5px;
+  background-color: #000;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: var(--fuente-titulos);
+}
+
+#verMenosTS {
+  width: 100%;
+  background-color: #000;
+  color: var(--color-fuente);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: var(--fuente-titulos);   
+}
+div.d-none {
+    display: none;
 }
 
