@@ -410,15 +410,18 @@ div.tecnologias{
     align-items: center;
     justify-content: center;
     box-shadow: 0 2px 3px 2px #0a0a0a;
-    transition: transform 0.2s ease-in;
+    transition: transform 0.2s ease-in, filter 0.2s ease-in;
+    filter: grayscale(1);
 }
 
 div.tecnologias:hover {
-    transform: translateY(-9%);
-    
+    transform: translateY(-5%);
+    filter: grayscale(0);
 }
 
-div.tecnologias p.tool {
+
+
+p.descripcionTS {
     font-family: var(--fuente-titulos);
     color: var(--color-fuente);
     font-size: 1.2rem;
@@ -465,3 +468,33 @@ div.d-none {
     display: none;
 }
 
+div.listaT2 {
+    width: 100%;
+    padding: 10px;    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+div.idioma { 
+    padding: 25px 25px 20px 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 3px 2px #0a0a0a;
+    transition: transform 0.2s ease-in, filter 0.2s ease-in;
+    filter: grayscale(1);
+}
+div.idioma:hover {
+    transform: translateY(-5%);
+    filter: grayscale(0);
+}
+
+img.imgIdiomas {
+    height: 110px;
+    width: 136px;
+    border-radius: 8px;
+}
