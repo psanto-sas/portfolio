@@ -15,3 +15,24 @@ document.getElementById("verMenosTS").addEventListener("click", function () {
   document.getElementById("verMasTS").classList.remove("d-none");
   document.getElementById("verMenosTS").classList.add("d-none");
 });
+
+//<button class="btnCopiar" id="btnCopiar" onclick="copiarMail()">
+//       <img src="img/icono-copiar2.png" title="Copiar Mail" alt="Copiar Mail">
+//     </button>
+
+function copiarEmail(){
+  const email = "plsantoro18@gmail.com";
+  navigator.clipboard.writeText(email)
+  .then(() =>{
+    const mensaje = document.getElementById("EmailCopiado");
+    mensaje.style.display = "block";
+
+    // Ocultar el mensaje deespues de 2 segundos
+    setTimeout(() => {
+      mensaje.style.display = "none";
+    }, 2000);
+})
+  .catch(err => {
+    alert("Error al copiar mail: " + err)
+  })
+}
