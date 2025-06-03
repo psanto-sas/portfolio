@@ -1,1 +1,20 @@
 @import url(styles.css);
+
+@media screen and (max-width: 1368px){
+    div.imgPerfil {
+        width: 18vw;
+    }
+    p.margin0 {
+        display: none;
+    }
+    div.contenidoSM img {
+        width: 29vw;
+        height: 30vh;
+    }
+}
+
+
+
+
+
+
