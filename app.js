@@ -1,3 +1,8 @@
+
+//pop-up proyectos
+
+
+
 // Mostrar tecnologías ocultas
 document.getElementById("verMasTS").addEventListener("click", function () {
   const tecnologiasOcultas = document.querySelectorAll(".tecnologiasOcultas");
