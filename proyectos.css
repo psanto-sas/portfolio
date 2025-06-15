@@ -1,0 +1,163 @@
+:root {
+    --color-fuente:  #fff;
+    --color-resaltado: #2660a4;
+    --color-fondo: #191919;
+    --color-fondo2: #000;
+    --color-fondo3: #fff;
+    --fuente-titulos: "Poppins", sans-serif;
+}
+
+body {
+    background-color: var(--color-fondo2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.blur {
+    filter: blur();
+}
+
+.d-none {
+    display: none !important;
+}
+
+header {
+    padding: 0;
+    margin: 80px 0 20px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: end;
+    gap: 20px;
+    width: 50%;
+}
+
+#titulo {
+    background-color: var(--color-fondo);
+    font-family: var(--fuente-titulos);
+    font-size: 1.5rem;
+    border-radius: 20px;
+    padding: 30px 30px;
+    align-self: center;
+}
+#titulo > h1 {
+    color: var(--color-fuente);
+    padding: 0 0 2px 0;
+    margin: 0;
+    text-decoration: 2px underline dashed;
+    text-underline-offset: 7px;
+    filter: brightness(100%);
+    transition: filter 0.3s ease-in;
+}
+#titulo > h1:hover{
+text-shadow: 0 0 8px #ffffff;
+}
+
+.container {
+    background-color: var(--color-fondo);
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#subtitle {
+    margin: 0 0 3% 0;
+    width: 75%;
+    color: var(--color-fuente);
+    font-family: var(--fuente-titulos);
+    text-align: center;
+}
+
+#projects {
+    display: flex;
+    gap: 5px;
+}
+
+.cardProject {
+    background-color: var(--color-fondo);
+    border: 2px solid black;
+    width: 260px;
+    height: 320px;
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center; 
+    
+    transition: transform 0.2s ease-in, box-shadow 0.2s ease-in;
+}
+
+/*  */
+.cardProject:hover {
+    transform: translateY(-3%);
+    box-shadow: 3px 15px #000;
+}
+
+.cardProject > img {
+    width:220px;
+    height: 120px;
+}
+
+.titleProject {
+    color: var(--color-fuente);
+    font-family: var(--fuente-titulos);
+    text-align: center;
+    margin: 10px 0 10px 0;
+    font-size: 1.1rem;
+}
+.titleProject:hover {
+    filter: brightness(140%);
+    color: var(--color-resaltado);
+}
+
+.description {
+    color: var(--color-fuente);
+    font-family: var(--fuente-titulos);
+    text-align: center;
+    margin: 0 0 20px 0;
+    font-size: 15px;
+}
+
+a.linkGithub {
+    padding: 5px;
+    border: 2px solid #fff;
+    text-decoration: none;
+    color: var(--color-fuente);
+    font-family: var(--fuente-titulos);
+}
+
+.BTM {
+    background-color: var(--color-fondo);
+    font-family: var(--fuente-titulos);
+    font-size: 0.8rem;
+    padding: 10px;
+    margin: 30px 0 0 0;
+    height: 25px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    transition: transform 0.2s ease-in;
+}
+.BTM > a {
+    text-decoration: none;
+    color: var(--color-fuente);
+}
+
+.BTM:hover {
+    transform: translateY(-5%);
+}
+
+.BTM > a:hover {
+    font-weight: 600;
+    color: var(--color-resaltado);
+    filter: brightness(140%);
+}

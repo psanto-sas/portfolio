@@ -1,8 +1,3 @@
-
-//pop-up proyectos
-
-
-
 // Mostrar tecnologías ocultas
 document.getElementById("verMasTS").addEventListener("click", function () {
   const tecnologiasOcultas = document.querySelectorAll(".tecnologiasOcultas");
@@ -41,3 +36,12 @@ function copiarEmail(){
     alert("Error al copiar mail: " + err)
   })
 }
+
+//pop-up proyectos
+
+//function openModal
+
+// let modal = document.getElementsByClassName('modal')
+// let
+
+//function closeModal

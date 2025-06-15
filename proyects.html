@@ -4,9 +4,94 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylessheet" href="styles.css" />
+    <link rel="stylesheet" href="proyectos.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
 </head>
+
 <body>
-    
+    <header>
+     <div id="titulo"><h1>MIS PROYECTOS</h1></div>
+     
+     </div>
+    </header>
+    <div class="container" >
+        <div id="subtitle">
+        A continuacion, veras todos mis proyectos. Puede hacer click sobre cada uno para 
+        una descripcion mas detallada y ver cuales tecnologias use.</div>
+        
+        <div id="projects">
+        <button class="cardProject"><img class="imgProject" src="">
+            <h2 class="titleProject">E-commerce Maquetado</h2>
+            <p class="description">Maquetacion de un sitio e-commerce ficticio para la venta de productos de computacion.</p>
+            <a class="linkGithub" href="">Ver en GitHub</a>
+        </button>
+        <div class="modal d-none">
+          <div class="column1Modal">
+                <img>
+                <p class="epigrafe"></p>
+          </div>   
+          <div class="column2Modal">
+            <h1 class="titleModal"></h1>
+            <p class="description"></p>
+            <div class="techUsed"><img><img><img></div>
+            <a class="linkGithub" href="">Ver en GitHub</a>
+          </div>
+          <div class="column3Modal"><button onclick="closeModal()"></button></div>
+        </div>
+        
+        <button class="cardProject"><img class="imgProject" src="">
+            <h2 class="titleProject">Calculadora</h2>
+            <p class="description">Una calculadora web que cuenta con todas las funciones basicas.</p>
+            <a class="linkGithub" href="">Ver en GitHub</a>
+        </button>
+        <div class="modal d-none">
+          <div class="column1Modal">
+                <img>
+                <p class="epigrafe"></p>
+          </div>   
+          <div class="column2Modal">
+            <h1 class="titleModal"></h1>
+            <p class="description"></p>
+            <div class="techUsed"><img><img><img></div>
+            <a class="linkGithub" href="">Ver en GitHub</a>
+          </div>
+          <div class="column3Modal"><button onclick="closeModal()"></button></div>
+        </div>
+        
+        <button class="cardProject"><img class="imgProject" src="">
+            <h2 class="titleProject">To-Do List</h2>
+            <p class="description">Pagina web que te permite crear y eliminar tareas.</p>
+            <a class="linkGithub" href="">Ver en GitHub</a>
+        </button>
+        <div class="modal d-none">
+          <div class="column1Modal">
+                <img>
+                <p class="epigrafe"></p>
+          </div>   
+          <div class="column2Modal">
+            <h1 class="titleModal"></h1>
+            <p class="description"></p>
+            <div class="techUsed"><img><img><img></div>
+            <a class="linkGithub" href="">Ver en GitHub</a>
+          </div>
+          <div class="column3Modal"><button onclick="closeModal()"></button></div>
+        </div>
+
+        <button class="cardProject d-none"><img class="imgProject" src="">
+            <h2 class="titleProject"></h2>
+            <p class="description"></p></div>
+            <a class="linkGithub d-none" href=""></a>
+        </button>
+    </div>
+
+    <div class="BTM">
+     <a href="index.html">
+     Volver a pagina principal</a>
+    </div>
 </body>
 </html>
