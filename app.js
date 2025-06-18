@@ -40,6 +40,13 @@ function copiarEmail(){
 //pop-up proyectos
 
 //function openModal
+addEventListener("click", function openModal(){
+  let modal = document.querySelectorAll("cardProject");
+
+  
+
+}
+)
 
 // let modal = document.getElementsByClassName('modal')
 // let
